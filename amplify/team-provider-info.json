@@ -10,6 +10,11 @@
       "StackName": "amplify-beta-dev-162706",
       "StackId": "arn:aws:cloudformation:sa-east-1:581832267808:stack/amplify-beta-dev-162706/2e0ee550-d097-11ec-9e2c-021b47921bdc",
       "AmplifyAppId": "d43cjt6ebwuil"
+    },
+    "categories": {
+      "auth": {
+        "beta816df747": {}
+      }
     }
   },
   "prod": {
