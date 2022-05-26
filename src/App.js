@@ -4,10 +4,11 @@ import { Amplify } from 'aws-amplify';
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import awsExports from './aws-exports';
+import Teste from './components/teste'
 Amplify.configure(awsExports);
 
 
-function App() {
+const App = () => {
   return (
     <Authenticator>
       {({ signOut, user }) => (
@@ -18,6 +19,7 @@ function App() {
               <p>
                 Edit <code>src/App.js</code> and save to reload.
               </p>
+              <Teste />
               <a
                 className="App-link"
                 href="https://reactjs.org"
