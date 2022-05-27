@@ -1,5 +1,5 @@
 {
-  "projectPath": "/home/robson/Projects/Pessoal/beta",
-  "defaultEditor": "Visual Studio Code",
-  "envName": "dev"
+  "projectPath": "/home/robson/beta",
+  "envName": "dev",
+  "defaultEditor": "vscode"
 }

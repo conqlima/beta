@@ -205,6 +205,27 @@
         }
       }
     },
+    "apibeta": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-beta-dev-162706-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "Parameters": {
+          "CreateAPIKey": 0,
+          "AppSyncApiName": "beta",
+          "DynamoDBBillingMode": "PAY_PER_REQUEST",
+          "DynamoDBEnableServerSideEncryption": false,
+          "AuthCognitoUserPoolId": {
+            "Fn::GetAtt": [
+              "authbeta816df747",
+              "Outputs.UserPoolId"
+            ]
+          },
+          "S3DeploymentBucket": "amplify-beta-dev-162706-deployment",
+          "S3DeploymentRootKey": "amplify-appsync-files/29cd8a1b897b63e2b32f1de536924e957ef83526",
+          "env": "dev"
+        }
+      }
+    },
     "UpdateRolesWithIDPFunction": {
       "DependsOn": [
         "AuthRole",
@@ -280,7 +301,7 @@
           }
         },
         "Handler": "index.handler",
-        "Runtime": "nodejs12.x",
+        "Runtime": "nodejs14.x",
         "Timeout": 300,
         "Role": {
           "Fn::GetAtt": [

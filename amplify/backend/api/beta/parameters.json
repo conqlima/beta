@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "beta",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authbeta816df747",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "beta",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/home/robson/beta/amplify/backend/api/beta/schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authbeta816df747"
+    }
+  }
+}
