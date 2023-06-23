@@ -15,7 +15,7 @@ const App = () => {
       {({ signOut, user }) => (
         <main>
           <h1>Hello {user.username}</h1>
-          <button onClick={signOut}>Sign out</button>
+          <button onClick={signOut}>Sign out, isso é um teste</button>
           <Outlet />
         </main>
       )}
