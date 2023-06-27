@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <div>
-            <h1>Página Inicial</h1>
+            <h1>Página Inicial Mentoria</h1>
             <nav>
                 <ul>
                     <li>
